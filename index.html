@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container1">
+        <div class="form-box">
+            <header>
+                <h1 class="hd">Student Data</h1>
+            </header>
+            <form action="">
+                <input type="text" id="inp1" placeholder="FirstName" maxlength="10">
+                <input type="text" id="inp2" placeholder="LastName" maxlength="10">
+                <input type="number" id="inp3" placeholder="Age" maxlength="3">
+                <input type="email" id="inp4" placeholder="email@gmail.com">
+                <button onclick="addVal()" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <section class="row col-12">
+            <div>
+                <h1 class="mt-5 text-center hd">Students List</h1><hr>
+                <h3 class="hd">Total Students: <span id="TS">0</span></h3>
+            </div>
+            <div>
+        <table class="table table-transparent table-striped mt-3" id="table">
+            <thead>
+                <tr class="hd">
+                    <th>S.No</th>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>ID</th>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+            
+            </tbody>
+           
+        </table>
+    </div>
+    </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
